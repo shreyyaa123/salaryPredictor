@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCE9EC"
+    tools:context=".UserInputFragment">
+
+
+    <Spinner
+        android:id="@+id/jobtype_spinner"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/major_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobtype_textview"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/jobtype_textview"
+        android:layout_width="198dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="4dp"
+        android:text="Job Type (Select One)"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/jobtype_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degree_select_spinner" />
+
+    <Spinner
+        android:id="@+id/degree_select_spinner"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/jobtype_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degree_textview"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/degree_textview"
+        android:layout_width="193dp"
+        android:layout_height="33dp"
+        android:text="Degree (Select One)"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/jobtype_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <Spinner
+        android:id="@+id/year_select_spinner"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year_textview" />
+
+    <TextView
+        android:id="@+id/industry_textview"
+        android:layout_width="307dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:text="Industry"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/industry_spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/major_spinner" />
+
+    <Spinner
+        android:id="@+id/industry_spinner"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/industry_textview" />
+
+    <TextView
+        android:id="@+id/year_textview"
+        android:layout_width="264dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="10dp"
+        android:text="Years of Experience"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/industry_spinner" />
+
+    <TextView
+        android:id="@+id/major_textview"
+        android:layout_width="93dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:text="Major"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobtype_spinner" />
+
+    <Spinner
+        android:id="@+id/major_spinner"
+        android:layout_width="337dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/major_textview" />
+
+    <Button
+        android:id="@+id/submit_input_button"
+        android:layout_width="158dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="64dp"
+        android:background="#9AEF9D"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

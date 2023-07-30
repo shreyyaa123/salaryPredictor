@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/StartFragment">
+
+    <fragment
+        android:id="@+id/StartFragment"
+        android:name="com.example.salarypredictor.StartFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/start_fragment">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.salarypredictor.UserInputFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/user_input_fragment">
+        <action
+            android:id="@+id/action_SecondFragment_to_ThirdFragment"
+            app:destination="@id/ThirdFragment" />
+        <argument
+            android:name="prediction"
+            app:argType="string"
+            android:defaultValue="loading" />
+    </fragment>
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="com.example.salarypredictor.PredictionFragment"
+        android:label="thirdFragment"
+        tools:layout="@layout/fragment_prediction_page_fragment"/>
+</navigation>
