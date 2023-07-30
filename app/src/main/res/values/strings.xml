@@ -9,8 +9,8 @@
     <string name="year_array"></string>
     <string name="title_text">Salary Predictor</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="Results">Based on the Inputed Information Your Predicted Salary Is:</string>
-    <string name="YesOrNo">$$</string>
+    <string name="Results">Your Predicted Salary Is:</string>
+    <string name="YesOrNo">$</string>
     <string-array name="degree_array">
         <item>None</item>
         <item>High School</item>

@@ -17,7 +17,6 @@ public class PredictionFragment extends Fragment {
     private FragmentPredictionPageFragmentBinding binding;
    private TextView amountTextview ;
     String predictionText = "";
-    private TextView prone_textview;
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
@@ -36,8 +35,9 @@ public class PredictionFragment extends Fragment {
 
         Bundle args = getArguments();
             String text = args.getString("prediction");
+            text = "$"+text + "k/yr";
             System.out.println("text: "+ text);
-        amountTextview.setText("$" + text + "k/yr");
+        amountTextview.setText(text.replace(".",""));
 
 
 
