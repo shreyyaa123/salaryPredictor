@@ -15,9 +15,7 @@ Included:
         train_features & train_salaries: data set used to train the model 
 
 Tools used:
-  Android Studios 
-  Jupyter Notebook 
-  Kaggle
+  Android Studios, Jupyter Notebook, Kaggle
  
   
 
