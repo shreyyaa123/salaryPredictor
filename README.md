@@ -1,1 +1,1 @@
-# DepressionRiskApp
+# SalaryPredictor
